@@ -1,21 +1,25 @@
 # One Click Sign in for Outlook
 
-A git wrapper for Outlook that makes using OAuth2 for Outlook/Office365 easier. It is a REST API that returns the access token after logging into Outlook. It is currently hosted at xxx.xxx.xxx.xxx
+A wrapper for Outlook that makes using OAuth2 for Outlook/Office365 easier. It is a REST API that returns the access token after logging into Outlook. It can be used for any framework/language. It is currently hosted at xxx.xxx.xxx.xxx
 
-* Ruby version
+The access token can be accessed at xxx.xxx.xxx.xxx/api/v1
 
-* System dependencies
+## Here's a simple code example using ruby
 
-* Configuration
+```ruby
+#Gemfile
 
-* Database creation
+gem 'httparty'
+```
 
-* Database initialization
+```ruby
+   require 'httparty'
 
-* How to run the test suite
+   response = HTTParty.get('xxx.xxx.xxx.xxx/api/v1')
+   data = JSON.parse(response.body)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+The access token can be obtained using
+```ruby
+data[:token]
+```
