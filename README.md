@@ -1,9 +1,6 @@
-# README
+# One Click Sign in for Outlook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+A git wrapper for Outlook that makes using OAuth2 for Outlook/Office365 easier. It is a REST API that returns the access token after logging into Outlook. It is currently hosted at xxx.xxx.xxx.xxx
 
 * Ruby version
 
