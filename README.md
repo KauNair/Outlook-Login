@@ -9,7 +9,7 @@ The access token can be accessed at xxx.xxx.xxx.xxx/api/v1
 ```ruby
 #Gemfile
 
-gem 'httparty'
+   gem 'httparty'
 ```
 
 ```ruby
@@ -21,5 +21,5 @@ gem 'httparty'
 ```
 The access token can be obtained using
 ```ruby
-data[:token]
+   data[:token]
 ```
