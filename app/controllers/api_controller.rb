@@ -7,6 +7,16 @@ class ApiController < ApplicationController
         render json: {url: login_url}
     end
 
+    def edit
+        if token.expired?
+            new_token = token.refresh!
+            access_token = new_token.token
+        else
+            access_token = token.token
+        end
+
+    end
+
     def get_token_from_code(auth_code)
         client = OAuth2::Client.new(CLIENT_ID,
                 CLIENT_SECRET,
