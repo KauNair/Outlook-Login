@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     scope :v1 do
       get '/' ,to: 'api#home'
       get '/edit', to:'api#edit'
+      get '/add', to:'api#add'
     end
   end
 
