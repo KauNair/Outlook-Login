@@ -46,5 +46,11 @@ class ApiController < ApplicationController
             access_token = token.token
         end
     end
+    def add
+        client = OAuth2::Client.new(CLIENT_ID,
+                CLIENT_SECRET,
+                :site => 'https://login.microsoftonline.com',
+                :authorize_url => '/common/oauth2/v2.0/authorize',
+    end
     
 end
